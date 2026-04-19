@@ -37,6 +37,7 @@
   height: 100%;
   padding: 20px;
   background-color: variables.$black;
+  background-image: url('/img/sidebar-bg.png');
   text-align: center;
   overflow: hidden;
   transform: translate3d(280px, 0, 0);
@@ -44,7 +45,7 @@
   z-index: 1;
 
   @media (prefers-color-scheme: dark) {
-    background: color.adjust(variables.$dark-mode-post-background, $lightness: 5%);
+    background-color: color.adjust(variables.$dark-mode-post-background, $lightness: 5%);
   }
   .shortcuts {
     display: block;
@@ -126,6 +127,8 @@
   }
   .about-me {
     padding: 12px 5px 15px 5px;
+    background: rgba(0,0,0,0.1);
+    border: 1px solid color.adjust(black, $lightness: 15%);
     transition: background 0.24s, border-color 0.24s;
 
     .avatar {
